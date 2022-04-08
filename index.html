@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2113">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;html&gt;&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;meta charset="utf-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;meta name="robots" content="noindex, nofollow"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;style type="text/css"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">              </span>padding: 0;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>svg:not(:root) {</p>
+<p class="p1"><span class="Apple-converted-space">              </span>display: block;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>.playable-code {</p>
+<p class="p1"><span class="Apple-converted-space">              </span>background-color: #f4f7f8;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>border-left: 6px solid #558abb;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>border-width: medium medium medium 6px;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>color: #4d4e53;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>height: 100px;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>width: 90%;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>padding: 10px 10px 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>.playable-canvas {</p>
+<p class="p1"><span class="Apple-converted-space">              </span>border: 1px solid #4d4e53;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>border-radius: 2px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>.playable-buttons {</p>
+<p class="p1"><span class="Apple-converted-space">              </span>text-align: right;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>width: 90%;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>padding: 5px 10px 5px 26px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/style&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;style type="text/css"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>form {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* Just to center the form on the page */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin: 0 auto;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>width: 400px;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* To see the limits of the form */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 1em;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border: 1px solid #CCC;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-radius: 1em;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">div + div {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-top: 1em;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">label {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* To make sure that all label have the same size and are properly align */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>display: inline-block;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>width: 90px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-align: right;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">input, textarea {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* To make sure that all text field have the same font settings</p>
+<p class="p1"><span class="Apple-converted-space">     </span>By default, textarea are set with a monospace font */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font: 1em sans-serif;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* To give the same size to all text field */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>width: 300px;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>-moz-box-sizing: border-box;</p>
+<p class="p1"><span class="Apple-converted-space">       </span>box-sizing: border-box;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* To harmonize the look &amp; feel of text field border */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border: 1px solid #999;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">input:focus, textarea:focus {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* To give a little highlight on active elements */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border-color: #000;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">textarea {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* To properly align multiline text field with their label */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>vertical-align: top;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* To give enough room to type some text */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>height: 5em;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* To allow users to resize any textarea vertically</p>
+<p class="p1"><span class="Apple-converted-space">     </span>It works only on Chrome, Firefox and Safari */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>resize: vertical;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.button {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* To position the buttons to the same position of the text fields */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding-left: 90px; /* same size as the label elements */</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">button {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* This extra margin represent the same space as the space between</p>
+<p class="p1"><span class="Apple-converted-space">     </span>the labels and their text fields */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>margin-left: .5em;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/style&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;title&gt;Example - a_simple_form - code sample&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;body&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;form action="/my-handling-form-page" method="post"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;label for="name"&gt;Name:&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;input type="text" id="name" name="user_name"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;label for="mail"&gt;E-mail:&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;input type="email" id="mail" name="user_email"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;label for="msg"&gt;Message:&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;textarea id="msg" name="user_message"&gt;&lt;/textarea&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="button"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;button type="submit"&gt;Send your message&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/form&gt;</p>
+<p class="p2"><br></p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1">&lt;/body&gt;&lt;/html&gt;</p>
+</body>
+</html>
