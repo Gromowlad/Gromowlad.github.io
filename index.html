@@ -37,11 +37,11 @@
 
   function calcBMIandPerc_Metr() {
 
-    var meters = document.getElementById('heightId').value;
-    var kgs = (document.getElementById('weightId').value) / 100;
+    var meters = document.getElementById('heightId').value /100;
+    var kgs = (document.getElementById('weightId').value);
     var agem = (document.getElementById('ageId').value) * 12;
     var sex =  document.querySelector('input[name="gender"]:checked').value;
-
+console.log("type of gender: " + sex + " " + typeof sex);
     // returning object with calculations
     var calcBmiObj = {
       bmi: -1,
